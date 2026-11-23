@@ -1,0 +1,19 @@
+{
+  "nominal_times_s": [
+    0,
+    5,
+    15,
+    30,
+    60,
+    120,
+    240,
+    450,
+    600
+  ],
+  "point_dwell_s": 0.05,
+  "n_sites": 36,
+  "scan_duration_s": 1.8,
+  "holdout_nominal_time_s": 120,
+  "PSF_sigma_um": 0.3,
+  "PSF_FWHM_um": 0.7064460134999999
+}

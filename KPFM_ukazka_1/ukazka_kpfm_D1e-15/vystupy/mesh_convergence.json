@@ -1,0 +1,34 @@
+[
+  {
+    "base_grid": 20,
+    "edge_min_step_um": 0.025,
+    "actual_grid": 38,
+    "dielectric_cells": 1132,
+    "RMSE_to_finest_V": 0.010711395923126095,
+    "max_abs_error_to_finest_V": 0.03263298947837068
+  },
+  {
+    "base_grid": 40,
+    "edge_min_step_um": 0.025,
+    "actual_grid": 52,
+    "dielectric_cells": 2172,
+    "RMSE_to_finest_V": 0.0029944411629910616,
+    "max_abs_error_to_finest_V": 0.009277283516761381
+  },
+  {
+    "base_grid": 40,
+    "edge_min_step_um": 0.0125,
+    "actual_grid": 60,
+    "dielectric_cells": 2844,
+    "RMSE_to_finest_V": 0.002520640510598014,
+    "max_abs_error_to_finest_V": 0.009713427110292328
+  },
+  {
+    "base_grid": 80,
+    "edge_min_step_um": 0.0125,
+    "actual_grid": 92,
+    "dielectric_cells": 6924,
+    "RMSE_to_finest_V": 0.0,
+    "max_abs_error_to_finest_V": 0.0
+  }
+]

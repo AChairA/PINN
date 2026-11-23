@@ -1,0 +1,12 @@
+{
+  "D_true_m2_s": 1e-15,
+  "D_PINN_m2_s": 1.0117809188501564e-15,
+  "relative_error": 0.011780918850156308,
+  "fine_grid": 80,
+  "inverse_grid": 40,
+  "recovery_within_10_percent": true,
+  "inverse_actual_cells_per_axis": 52,
+  "truth_actual_cells_per_axis": 92,
+  "inverse_min_cell_um": 0.02499999999999991,
+  "truth_min_cell_um": 0.012500000000000178
+}

@@ -1,0 +1,59 @@
+KPFM / PINN - PREDAVACI BALICEK
+Datum dokumentace: 19. 11. 2026
+
+HLAVNI VYSLEDEK
+Synteticka pravda D = 1e-15 m2/s; casove okno 0-600 s.
+PINN odhadl D = 1.0117809188501564e-15 m2/s (chyba 1.18 %).
+RMSE vynechanych dat 14.79 mV; vlozeny sum sigma = 15 mV.
+
+CO OTEVRIT
+1. Pruvodce_a_konverzace.pdf - navod a prepis odbornych zprav tohoto vlakna.
+2. ukazka_kpfm_D1e-15/Pruvodce.ipynb - notebook se sedmi vlozenymi obrazky.
+3. ukazka_kpfm_D1e-15/README.md - podrobny model, vysledky a prikazy.
+4. ukazka_kpfm_D1e-15/vystupy/ - hotova data, vahy modelu a grafy.
+
+USPORADANI
+ukazka_kpfm_D1e-15/  Finalni pripad: zdrojove skripty a config.json.
+  vystupy/           Zasumena mereni CSV, pravda, predikce, NPZ pole,
+                     model.pt, loss, citlivosti, validace a sedm PNG.
+  kontrola_hrubsi_mrizky/  Predbezne ciselne kontroly pred zjemnenim site.
+ukazka_kpfm_design/  Puvodni srovnavaci pripad D = 2e-14 m2/s.
+archiv/ukazka_kpfm_D1e-17/  Rozpracovany, nasledne opraveny pripad.
+dokumentace/        Presny prepis TXT/JSON a puvodni prilozeny obrazek,
+                    zdroj pro obnovu PDF, prostredi a kontrola integrity.
+
+SPUSTENI VE WINDOWS POWERSHELLU
+Otevrete PowerShell v teto slozce.
+
+  .\SPUSTIT.ps1 -Rezim kontrola
+
+Kontrola kontrolnich souctu potrebuje jen standardni Python. K prohlizeni
+hotovych obrazku, PDF a CSV neni instalace numerickeho prostredi nutna.
+Pro nove vypocty je treba Python a zavislosti z requirements.txt:
+
+  .\INSTALACE.ps1
+  .\SPUSTIT.ps1 -Rezim testy
+  .\SPUSTIT.ps1 -Rezim vse
+
+Alternativne bez PowerShell skriptu:
+
+  python -m venv .venv
+  .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+  .\.venv\Scripts\python.exe ukazka_kpfm_D1e-15\reproduce.py
+
+Rezim vse zopakuje navrh mist, simulaci, trenink, validacni restarty,
+citlivosti, kontrolu mrizky, testy a vytvori aktualni notebook/pruvodce.
+Rezim trenink pouze znovu natrénuje PINN z prilozenych mereni.
+Rezim citlivosti pouze obnovi prostorove a casove citlivosti.
+Volba -Python umoznuje zadat vlastni cestu k interpreteru.
+Pro obnovu PDF: .\INSTALACE.ps1 -VcetnePdf, pak .\SPUSTIT.ps1 -Rezim pdf.
+
+Vypocty zapisuji vlastni vystupy znovu. Dodany MANIFEST_SHA256.txt popisuje
+puvodni predavany stav; po novem vypoctu se proto kontrolni soucty zmeni.
+Samotne Python prostredi .venv neni pribalene. Overene verze knihoven jsou
+uvedene v dokumentace/overene_prostredi.json.
+
+INTERPRETACE
+D je efektivni parametr difuze potencialu v homogennim modelu. Znama
+pocatecni mapa, pevna Gaussova PSF a nulovy vnejsi tok jsou predpoklady.
+Vysledky archivu nejsou konecnymi vysledky pripadu D = 1e-15.

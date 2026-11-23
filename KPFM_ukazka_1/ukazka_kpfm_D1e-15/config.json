@@ -1,0 +1,55 @@
+{
+  "model": {
+    "domain_um": 10.0,
+    "electrode_length_um": 4.0,
+    "electrode_width_um": 2.0,
+    "left_voltage_V": 2.0,
+    "right_voltage_V": 0.0,
+    "initial_dielectric_V": 0.0,
+    "psf_sigma_um": 0.30,
+    "noise_sigma_V": 0.015,
+    "inverse_grid": 40,
+    "edge_refinement": true,
+    "edge_min_step_um": 0.025,
+    "D_initial_m2_s": 3e-16,
+    "gain_initial": 0.70,
+    "offset_initial_V": 0.0,
+    "time_scale_s": 602.0
+  },
+  "design": {
+    "D_prior_m2_s": [2.5e-16, 5e-16, 1.5e-15, 3e-15],
+    "nominal_times_s": [0, 5, 15, 30, 60, 120, 240, 450, 600],
+    "holdout_nominal_time_s": 120,
+    "point_dwell_s": 0.05,
+    "min_spacing_um": 0.70,
+    "points_per_y_band": 8,
+    "candidate_margin_um": 0.9,
+    "candidate_step_um": 0.20,
+    "extra_edge_distances_um": [0.025, 0.075, 0.15, 0.25, 0.4, 0.6],
+    "transverse_band_edges_um": [0, 4, 6, 10]
+  },
+  "synthetic_only": {
+    "truth_grid": 80,
+    "truth_edge_min_step_um": 0.0125,
+    "D_true_m2_s": 1e-15,
+    "gain_true": 0.72,
+    "offset_true_V": 0.025,
+    "noise_seed": 2026
+  },
+  "training": {
+    "steps": 3000,
+    "seed": 7,
+    "width": 24,
+    "physics_weight": 100.0,
+    "alpha_scale": 0.006,
+    "learning_rate": 0.003,
+    "threads": 4,
+    "validation_restarts": [[19, 3e-16], [31, 3e-15]]
+  },
+  "diagnostics": {
+    "D_nominal_m2_s": 1e-15,
+    "map_times_s": [0, 5, 30, 120, 300, 600],
+    "curve_min_s": 0.1,
+    "curve_max_s": 200000
+  }
+}

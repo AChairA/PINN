@@ -1,0 +1,22 @@
+{
+  "method": "spatial_basis_neural_clock_PINN",
+  "D_eff_m2_s": 1.0117809188501564e-15,
+  "D_eff_um2_s": 0.0010117809188501567,
+  "D_initial_m2_s": 3e-16,
+  "seed": 7,
+  "gain": 0.7221267280814814,
+  "offset_V": 0.025562922840275146,
+  "train_RMSE_V": 0.01616344985049212,
+  "time_holdout_RMSE_V": 0.014749146059464502,
+  "spatial_holdout_RMSE_V": 0.015375694044681084,
+  "all_holdout_RMSE_V": 0.014786540402671201,
+  "physics_clock_relative_RMS": 0.0015709103591948993,
+  "minimum_clock_derivative": 0.006073524154546871,
+  "interior_PDE_RMS_V_per_tau": 0.02735236054264858,
+  "interior_PDE_RMS_V_per_s": 4.5435814854897975e-05,
+  "n_training": 224,
+  "n_heldout": 100,
+  "seconds": 19.34850910003297,
+  "psf_sigma_um_used": 0.3,
+  "warnings": []
+}

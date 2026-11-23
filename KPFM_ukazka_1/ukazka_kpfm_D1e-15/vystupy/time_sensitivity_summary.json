@@ -1,0 +1,56 @@
+{
+  "nominal_D_m2_s": 1e-15,
+  "planning_gain": 0.7,
+  "initial_dielectric_V": 0.0,
+  "t0_D_sensitivity_is_zero": true,
+  "dV_dlnD_equals_t_times_dV_dt_max_error_V": 3.692314995418222e-10,
+  "location_peaks": [
+    {
+      "location": "Levý dolní roh (0,9; 0,9)",
+      "x_um": 0.9,
+      "y_um": 0.9,
+      "peak_time_s": 5286.188974705934,
+      "peak_abs_dV_dlnD_V": 0.5045922934326024,
+      "peak_inside_600s_protocol": false,
+      "abs_dV_dlnD_at_600s_V": 0.03494766185566192
+    },
+    {
+      "location": "U spodní hrany (2; 3,9)",
+      "x_um": 2.0,
+      "y_um": 3.9,
+      "peak_time_s": 84.01390085012177,
+      "peak_abs_dV_dlnD_V": 0.14363942214830513,
+      "peak_inside_600s_protocol": true,
+      "abs_dV_dlnD_at_600s_V": 0.08483780464838972
+    },
+    {
+      "location": "U čela levé elektrody (4,025; 5)",
+      "x_um": 4.025,
+      "y_um": 5.0,
+      "peak_time_s": 60.0,
+      "peak_abs_dV_dlnD_V": 0.11441267189618112,
+      "peak_inside_600s_protocol": true,
+      "abs_dV_dlnD_at_600s_V": 0.05419491027466999
+    },
+    {
+      "location": "Střed mezery (5; 5)",
+      "x_um": 5.0,
+      "y_um": 5.0,
+      "peak_time_s": 377.17645280649856,
+      "peak_abs_dV_dlnD_V": 0.24661434211683364,
+      "peak_inside_600s_protocol": true,
+      "abs_dV_dlnD_at_600s_V": 0.22151336879632694
+    },
+    {
+      "location": "Dál od hrany (2; 3,5)",
+      "x_um": 2.0,
+      "y_um": 3.5,
+      "peak_time_s": 196.12134177368503,
+      "peak_abs_dV_dlnD_V": 0.2606079391816484,
+      "peak_inside_600s_protocol": true,
+      "abs_dV_dlnD_at_600s_V": 0.21074330548581882
+    }
+  ],
+  "map_is_conditional_on_no_flux_external_boundary": true,
+  "diagnostic_only_original_times_not_optimized": true
+}

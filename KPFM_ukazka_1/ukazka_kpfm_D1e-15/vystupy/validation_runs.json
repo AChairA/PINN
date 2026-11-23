@@ -1,0 +1,73 @@
+{
+  "PSF_aware_restarts": [
+    {
+      "method": "spatial_basis_neural_clock_PINN",
+      "D_eff_m2_s": 1.0117440662705203e-15,
+      "D_eff_um2_s": 0.0010117440662705205,
+      "D_initial_m2_s": 3e-16,
+      "seed": 19,
+      "gain": 0.7221129648491246,
+      "offset_V": 0.025552235496899507,
+      "train_RMSE_V": 0.01616336201391538,
+      "time_holdout_RMSE_V": 0.014752113295369627,
+      "spatial_holdout_RMSE_V": 0.015375763056816285,
+      "all_holdout_RMSE_V": 0.014787623361929736,
+      "physics_clock_relative_RMS": 0.0016440147497815947,
+      "minimum_clock_derivative": 0.006071911360185208,
+      "interior_PDE_RMS_V_per_tau": 0.029537830172188945,
+      "interior_PDE_RMS_V_per_s": 4.906616307672582e-05,
+      "n_training": 224,
+      "n_heldout": 100,
+      "seconds": 16.398075699980836,
+      "psf_sigma_um_used": 0.3,
+      "warnings": []
+    },
+    {
+      "method": "spatial_basis_neural_clock_PINN",
+      "D_eff_m2_s": 1.0118237228865652e-15,
+      "D_eff_um2_s": 0.0010118237228865655,
+      "D_initial_m2_s": 3e-15,
+      "seed": 31,
+      "gain": 0.7221318445006857,
+      "offset_V": 0.025546451588125376,
+      "train_RMSE_V": 0.016165297421680304,
+      "time_holdout_RMSE_V": 0.014750446581897954,
+      "spatial_holdout_RMSE_V": 0.015378701109562366,
+      "all_holdout_RMSE_V": 0.014791263204386977,
+      "physics_clock_relative_RMS": 0.0016122297468129153,
+      "minimum_clock_derivative": 0.006075391408152482,
+      "interior_PDE_RMS_V_per_tau": 0.013030353642598963,
+      "interior_PDE_RMS_V_per_s": 2.164510571860293e-05,
+      "n_training": 224,
+      "n_heldout": 100,
+      "seconds": 18.99973730003694,
+      "psf_sigma_um_used": 0.3,
+      "warnings": []
+    }
+  ],
+  "incorrect_no_blur_fit": {
+    "method": "spatial_basis_neural_clock_PINN",
+    "D_eff_m2_s": 1.2135413602872536e-15,
+    "D_eff_um2_s": 0.0012135413602872539,
+    "D_initial_m2_s": 3e-16,
+    "seed": 7,
+    "gain": 0.6041213022106392,
+    "offset_V": 0.05525238873688421,
+    "train_RMSE_V": 0.09289783391558465,
+    "time_holdout_RMSE_V": 0.07155926191510979,
+    "spatial_holdout_RMSE_V": 0.04623347453829311,
+    "all_holdout_RMSE_V": 0.054654481763018986,
+    "physics_clock_relative_RMS": 0.11724454054915012,
+    "minimum_clock_derivative": 0.0020075069979267513,
+    "interior_PDE_RMS_V_per_tau": 8.67915989441989,
+    "interior_PDE_RMS_V_per_s": 0.014417209126943338,
+    "n_training": 224,
+    "n_heldout": 100,
+    "seconds": 14.332807099970523,
+    "psf_sigma_um_used": 0.0,
+    "warnings": [
+      "Physics residual exceeds 5% of alpha; train longer or adjust weights."
+    ]
+  },
+  "seed_spread_is_not_a_confidence_interval": true
+}
