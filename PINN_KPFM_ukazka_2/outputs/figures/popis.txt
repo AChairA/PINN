@@ -1,0 +1,17 @@
+2D mapy a řezy pro všechny vybrané RH
+
+prehled_mapy.png: všechny RH v posledním měřeném čase; RH80 = 30 s, ostatní = 600 s.
+prehled_rezy.png: porovnání prvního a posledního měření s modelem.
+RH*/mapy_kpfm.png: modelový KPFM signál v každém čase měření.
+RH*/mapy_potencial.png: kalibrovaný modelový potenciál.
+RH*/mapy_naboj.png: efektivní kapacitní náboj, SiO₂ 300 nm, kov je maskovaný.
+RH*/rezy.png: podélný měřený/modelový řez, příčný modelový řez a odchylky.
+NPZ a CSV obsahují čísla použitá v obrázcích.
+
+Mapy jsou výstup numerického referenčního modelu, nikoli PINN nebo měřené 2D mapy.
+Počáteční podmínka: left_electrode_only. Viz pocatecni_stav.png.
+Dielektrikum začíná bez náboje v rámci lokálního kapacitního modelu.
+Čas měření 0 je od zapnutí posunut o fitovanou prodlevu nejvýše 3 s.
+Neshoda s prvními řezy může ukazovat chybějící okamžité elektrostatické pole v transportním modelu.
+Je-li D na mezi hledání, není rozlišené — viz metadata.json.
+Pro stejnou veličinu je barevná stupnice společná všem RH a časům.
